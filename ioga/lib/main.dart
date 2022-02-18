@@ -22,39 +22,39 @@ import 'package:flutter_localizations/flutter_localizations.dart';
 
 void main() {
   runApp(ThemeProvider(
-    initTheme: kDarkTheme,
-    child: Builder(builder: (context) {
-      return MaterialApp(
-        localizationsDelegates: const [
-          GlobalMaterialLocalizations.delegate
-        ],
-        supportedLocales: const [
-          Locale('en'),
-          Locale('pt'),
-        ],
-        theme: ThemeProvider.of(context),
-        debugShowCheckedModeBanner: false,
-        initialRoute: '/userProfile',
-        routes: {
-          '/login': (context) => const Login(),
-          '/signup': (context) => const SignUp(),
-          '/ptProfile': (context) => const PTProfile(),
-          '/userProfile': (context) => const UserProfile(),
-          '/editUserProfile': (context) => const EditUserProfile(),
-          '/ptMenu' : (context) => const PTMenu(),
-          '/helpAndSupport' : (context) => const HelpAndSupport(),
-          '/mealPlan' : (context) => MealPlan(),
-          '/dailyPlan' : (context) => const DailyPlan(),
-          '/trainingPlan' : (context) => const TrainingPlan(),
-          '/scheduleTraining' : (context) => const ScheduleTraining(),
-          '/ptUserList' : (context) => const PTUserList(),
-          '/gymDailyUsersStats' : (context) => const DailyUsersStats(),
-          '/gymWeeklyUsersStats' : (context) => const WeeklyUsersStats(),
-          '/gymHomePage' : (context) => const GymHomePage(),
-          '/gymGeneralStats' : (context) => const GeneralStats(),
-          '/gymClientList' : (context) => const ClientList(),
-        },
-      );
-    },)
+      initTheme: kDarkTheme,
+      child: Builder(builder: (context) {
+        return MaterialApp(
+          localizationsDelegates: const [
+            GlobalMaterialLocalizations.delegate
+          ],
+          supportedLocales: const [
+            Locale('en'),
+            Locale('pt'),
+          ],
+          theme: ThemeProvider.of(context),
+          debugShowCheckedModeBanner: false,
+          initialRoute: '/userProfile',
+          routes: {
+            '/login': (context) => const Login(),
+            '/signup': (context) => const SignUp(),
+            '/ptProfile': (context) => const PTProfile(),
+            '/userProfile': (context) => const UserProfile(),
+            '/editUserProfile': (context) => const EditUserProfile(),
+            '/ptMenu' : (context) => const PTMenu(),
+            '/helpAndSupport' : (context) => const HelpAndSupport(),
+            '/mealPlan' : (context) => MealPlan(),
+            '/dailyPlan' : (context) => const DailyPlan(),
+            '/trainingPlan' : (context) => const TrainingPlan(),
+            '/scheduleTraining' : (context) => const ScheduleTraining(),
+            '/ptUserList' : (context) => const PTUserList(),
+            '/gymDailyUsersStats' : (context) => const DailyUsersStats(),
+            '/gymWeeklyUsersStats' : (context) => const WeeklyUsersStats(),
+            '/gymHomePage' : (context) => const GymHomePage(),
+            '/gymGeneralStats' : (context) => const GeneralStats(),
+            '/gymClientList' : (context) => const ClientList(),
+          },
+        );
+      },)
   ));
 }
